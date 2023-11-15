@@ -51,5 +51,12 @@ monit status
 
 - [ ] Add encryption for the JSON configuration
 
----
+# Disclamer
+
+**Use at your own risk!**
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+By using this software you accept the licence available in the Github repository of this project. This means you accept all risks and you can hold no one liable for any damage!
+
 ##### *GLHF!*
