@@ -18,10 +18,31 @@ The **index.txt** file contains information needed for an update. You can manage
 
 # How to install
 
-1. Clone this reposistory into your gateway. <i>(Because ```git``` is not available on Kerlink iBTS Gateway by default, you can use any SCP tool or USB)</i>
-2. Modify the ```GATEWAY_EUI``` & ```REMOTE_UPDATE_INDEX_PATH``` in **setup.sh** file
-3. Run the **setup.sh** file
-4. Go to Monit WebUI <i>(http on port 2812)</i> or use the following command for the health of **remote_auto_config** process
+1. Download this reposistory into your gateway
+
+```
+curl https://codeload.github.com/nguyenmanhthao996tn/kerlink-remote-auto-config/tar.gz/refs/tags/v1.0.0 -o /tmp/kerlink-remote-auto-config-1.0.0.tar.gz
+```
+
+2. Extract the archive
+
+```
+tar -xvzf /tmp/kerlink-remote-auto-config-1.0.0.tar.gz -C /tmp/
+```
+
+3. Modify the ```GATEWAY_EUI``` & ```REMOTE_UPDATE_INDEX_PATH``` in **setup.sh** file to match your requirement
+
+```
+cd /tmp/kerlink-remote-auto-config-1.0.0/ && vim setup.sh
+```
+
+4. Run the **setup.sh** file
+
+```
+./setup.sh
+```
+
+5. Go to Monit WebUI <i>(http on port 2812)</i> or use the following command for the health of **remote_auto_config** process
 ```
 monit status
 ```
