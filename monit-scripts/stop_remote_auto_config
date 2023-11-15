@@ -1,0 +1,10 @@
+#!/bin/bash
+
+PIDFile="/tmp/remote_auto_config.pid"
+
+CurPID=$(<"$PIDFile")
+# echo $CurPID
+
+kill -9 $CurPID
+
+exit 0

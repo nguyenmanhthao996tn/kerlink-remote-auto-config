@@ -1,0 +1,2 @@
+# [Gateway EUI] [Update Patch ID] [URL to the update]
+7276ff000f061f15 5 https://raw.githubusercontent.com/nguyenmanhthao996tn/kerlink_config/main/config/7276ff000f061f15.json

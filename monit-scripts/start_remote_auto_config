@@ -1,0 +1,16 @@
+#!/bin/bash
+
+PIDFile="/tmp/remote_auto_config.pid"
+
+# Start the packet forwarder
+/user/remote_auto_config/remote_auto_config.sh &> /user/remote_auto_config/log/remote_auto_config.log &
+
+# Save the PID
+echo $! > $PIDFile
+
+# Save executing timestamp
+echo "$(date) || $0 ||  $1 || $2" >> /user/gateway_v2_hal/log/script_run_log.txt
+
+echo "Starting Remote auto config"
+
+exit 0

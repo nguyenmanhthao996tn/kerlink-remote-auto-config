@@ -1,0 +1,3 @@
+CHECK PROCESS remote_auto_config PIDFILE /tmp/remote_auto_config.pid
+	start program = "/etc/init.d/start_remote_auto_config"
+	stop program = "/etc/init.d/stop_remote_auto_config"
