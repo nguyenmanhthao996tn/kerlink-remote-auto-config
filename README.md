@@ -2,7 +2,9 @@
 
 This repository contains the source code & scripts for updating Semtech UDP Packet Forwarder JSON configuration on Kerlink iBTS Gateway (LR-FHSS).
 
-<img src="docs/gateway.jpg" width=200>
+<p align="center">
+  <img src="docs/gateway.jpg" width=300>
+</p>
 
 # Before install
 
