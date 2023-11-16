@@ -18,22 +18,24 @@ The **index.txt** file contains information needed for an update. You can manage
 
 # How to install
 
+<p style="color:red;"><b>Version in the following commands may change depend on your desired version. Recommend to use the latest one!</b></p>
+
 1. Download this reposistory into your gateway
 
 ```
-curl https://codeload.github.com/nguyenmanhthao996tn/kerlink-remote-auto-config/tar.gz/refs/tags/v1.0.0 -o /tmp/kerlink-remote-auto-config-1.0.0.tar.gz
+curl https://codeload.github.com/nguyenmanhthao996tn/kerlink-remote-auto-config/tar.gz/refs/tags/v1.1.1 -o /tmp/kerlink-remote-auto-config-1.1.1.tar.gz
 ```
 
 2. Extract the archive
 
 ```
-tar -xvzf /tmp/kerlink-remote-auto-config-1.0.0.tar.gz -C /tmp/
+tar -xvzf /tmp/kerlink-remote-auto-config-1.1.1.tar.gz -C /tmp/
 ```
 
 3. Modify the ```GATEWAY_EUI``` & ```REMOTE_UPDATE_INDEX_PATH``` in **setup.sh** file to match your requirement
 
 ```
-cd /tmp/kerlink-remote-auto-config-1.0.0/ && vim setup.sh
+cd /tmp/kerlink-remote-auto-config-1.1.1/ && vim setup.sh
 ```
 
 4. Run the **setup.sh** file
@@ -45,6 +47,24 @@ cd /tmp/kerlink-remote-auto-config-1.0.0/ && vim setup.sh
 5. Go to Monit WebUI <i>(http on port 2812)</i> or use the following command for the health of **remote_auto_config** process
 ```
 monit status
+```
+
+# Uninstall
+
+If you wish to disable this application, you can just disable the process named ```remote_auto_config``` via Monit WebUI or running following command on gateway's terminal:
+
+```
+monit stop remote_auto_config && monit unmonitor remote_auto_config
+```
+
+For complete uninstalling:
+
+```
+monit stop remote_auto_config && monit unmonitor remote_auto_config
+rm -f -v /etc/init.d/start_remote_auto_config
+rm -f -v /etc/init.d/stop_remote_auto_config
+rm -f -v /etc/monit.d/remote_auto_config
+rm -r -f -v /user/remote_auto_config
 ```
 
 # To-do

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-remote_index_path="https://rfthings.github.io/GatewayManagement/index.txt"
+remote_index_path=$(<remote_index_path.txt)
 
 
 # ===== Functions =====
