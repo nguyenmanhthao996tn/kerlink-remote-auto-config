@@ -41,7 +41,7 @@ cd /tmp/kerlink-remote-auto-config-1.1.2/ && vim setup.sh
 4. Run the **setup.sh** file
 
 ```
-./setup.sh
+chmod +x setup.sh && ./setup.sh
 ```
 
 5. Go to Monit WebUI <i>(http on port 2812)</i> or use the following command for the health of **remote_auto_config** process
