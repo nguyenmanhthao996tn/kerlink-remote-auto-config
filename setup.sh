@@ -1,7 +1,7 @@
 #!/bin/bash
 
-GATEWAY_EUI="7276ff000f061f15"
-REMOTE_UPDATE_INDEX_PATH="https://rfthings.github.io/GatewayManagement/index.txt"
+GATEWAY_EUI="<your gateway EUI>"
+REMOTE_UPDATE_INDEX_PATH="<your index.txt url>"
 
 # Remote auto config
 echo "Copying remote_auto_config resources to /user/..."
