@@ -1,8 +1,5 @@
 #!/bin/bash
 
-remote_index_path=$(<remote_index_path.txt)
-
-
 # ===== Functions =====
 
 do_update() {
@@ -43,6 +40,7 @@ local_gw_eui=$(<${current_path}/gw_eui.txt)
 echo "Local gateway EUI: $local_gw_eui"
 
 # Pull the update information file with Gateway EUI filter
+remote_index_path=$(<${current_path}/remote_index_path.txt)
 remote_update_file=$(curl -s $remote_index_path | grep $local_gw_eui)
 
 # Check if pulling OK

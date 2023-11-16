@@ -23,19 +23,19 @@ The **index.txt** file contains information needed for an update. You can manage
 1. Download this reposistory into your gateway
 
 ```
-curl https://codeload.github.com/nguyenmanhthao996tn/kerlink-remote-auto-config/tar.gz/refs/tags/v1.1.1 -o /tmp/kerlink-remote-auto-config-1.1.1.tar.gz
+curl https://codeload.github.com/nguyenmanhthao996tn/kerlink-remote-auto-config/tar.gz/refs/tags/v1.1.2 -o /tmp/kerlink-remote-auto-config-1.1.2.tar.gz
 ```
 
 2. Extract the archive
 
 ```
-tar -xvzf /tmp/kerlink-remote-auto-config-1.1.1.tar.gz -C /tmp/
+tar -xvzf /tmp/kerlink-remote-auto-config-1.1.2.tar.gz -C /tmp/
 ```
 
 3. Modify the ```GATEWAY_EUI``` & ```REMOTE_UPDATE_INDEX_PATH``` in **setup.sh** file to match your requirement
 
 ```
-cd /tmp/kerlink-remote-auto-config-1.1.1/ && vim setup.sh
+cd /tmp/kerlink-remote-auto-config-1.1.2/ && vim setup.sh
 ```
 
 4. Run the **setup.sh** file
