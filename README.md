@@ -60,7 +60,8 @@ monit stop remote_auto_config && monit unmonitor remote_auto_config
 For complete uninstalling:
 
 ```
-monit stop remote_auto_config && monit unmonitor remote_auto_config
+cd /
+monit stop remote_auto_config && monit unmonitor remote_auto_config && monit reload
 rm -f -v /etc/init.d/start_remote_auto_config
 rm -f -v /etc/init.d/stop_remote_auto_config
 rm -f -v /etc/monit.d/remote_auto_config
