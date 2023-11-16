@@ -57,6 +57,12 @@ tail -f /user/remote_auto_config/log/remote_auto_config.log
 monit status
 ```
 
+**You can also remove the installer to save storage on the Gateway**
+
+```
+cd / && rm /tmp/kerlink-remote-auto-config-* -rf
+```
+
 # Uninstall
 
 If you wish to disable this application, you can just disable the process named ```remote_auto_config``` via Monit WebUI or running following command on gateway's terminal:
