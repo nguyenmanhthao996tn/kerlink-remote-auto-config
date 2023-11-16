@@ -44,7 +44,15 @@ cd /tmp/kerlink-remote-auto-config-1.1.2/ && vim setup.sh
 chmod +x setup.sh && ./setup.sh
 ```
 
-5. Go to Monit WebUI <i>(http on port 2812)</i> or use the following command for the health of **remote_auto_config** process
+**You basiccally done installing here! For verifying the installation, run following step:**
+
+1. Check the remote_auto_config log
+
+```
+tail -f /user/remote_auto_config/log/remote_auto_config.log
+```
+
+2. Go to Monit WebUI <i>(http on port 2812)</i> or use the following command for the health of **remote_auto_config** process
 ```
 monit status
 ```
@@ -79,5 +87,7 @@ rm -r -f -v /user/remote_auto_config
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 By using this software you accept the licence available in the Github repository of this project. This means you accept all risks and you can hold no one liable for any damage!
+
+---
 
 ##### *GLHF!*
