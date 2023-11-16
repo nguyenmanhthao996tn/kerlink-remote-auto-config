@@ -1,2 +1,2 @@
-# [Gateway EUI] [Update Patch ID] [URL to the update]
-7276ff000f061f15 5 https://raw.githubusercontent.com/nguyenmanhthao996tn/kerlink_config/main/config/7276ff000f061f15.json
+# [Gateway EUI] [Patch MD5] [URL to the update]
+7276ff000f061f15 ebd40c834572923f767a7e6629be7cb8 https://rfthings.github.io/GatewayManagement/json_config/kerlink_061f15_as923_2.json

@@ -4,12 +4,12 @@ GATEWAY_EUI="7276ff000f061f15"
 REMOTE_UPDATE_INDEX_PATH="https://raw.githubusercontent.com/nguyenmanhthao996tn/kerlink_config/main/index.txt"
 
 # Remote auto config
-mkdir -p /user/remote-auto-config/log/
-cp -v -f ./remote-auto-config-src/* /user/remote-auto-config/
+mkdir -p /user/remote_auto_config/log/
+cp -v -f ./remote-auto-config-src/* /user/remote_auto_config/
 
-echo $GATEWAY_EUI > /user/remote-auto-config/gw_eui.txt
-echo $REMOTE_UPDATE_INDEX_PATH > /user/remote-auto-config/remote_index_path.txt
-echo 0 > /user/remote-auto-config/local_patch_id.txt
+echo $GATEWAY_EUI > /user/remote_auto_config/gw_eui.txt
+echo $REMOTE_UPDATE_INDEX_PATH > /user/remote_auto_config/remote_index_path.txt
+echo 0 > /user/remote_auto_config/local_patch_id.txt
 
 # Monit
 cp -v -f ./monit-scripts/remote_auto_config /etc/monit.d/remote_auto_config
